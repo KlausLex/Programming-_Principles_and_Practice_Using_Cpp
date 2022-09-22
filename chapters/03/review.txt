@@ -1,55 +1,72 @@
 # Chapter 03 . Review
 
-01. What is meant by the term prompt?
+01q. What is meant by the term prompt?
+01a. A <mark> prompt </mark> is a message, asking the user for an input.
 
-02. Which operator do you use to read into a variable?
+02q. Which operator do you use to read into a variable?
+02a. The "get from" operator <mark> >> </mark>.
 
-03. If you want the user to input an integer value into your program for a variable named >>number<<,
+03q. If you want the user to input an integer value into your program for a variable named <mark> number </mark>,
     what are two lines of code you could write to ask the user to do it and to input the value into your program?
+03a. 1 cout << "Enter any integer:" << '\n'; 2 cin >> int any_integer;
 
-04. What is >>'\n' called and what purpose does it serve?
+04q. What is <mark> '\n' </mark> called and what purpose does it serve?
+04a. <mark> '\n' </mark> is the "new line" operator. This operator equals <mark> enter </mark> or <mark> cr (carriage return) </mark>
+     and can be thought of sort of "acknowledge" to tell the program we are done with typing and stop listening for user input.
 
-05. What terminates input into a string?
+05q. What terminates input into a string?
+05a. Any whitespace (space, tab).
 
-06. What terminates input into an integer?
+06q. What terminates input into an integer?
+06a. Any non-alphabetical number (a-z, etc.).
 
-07. How would you write
+56q. What terminates input in a loop?
+56a. Depending on the machine (more specifically the operating system), either <mark> CTRL+Z </mark> on Windows,
+     or <mark> CTRL+D </mark> on UNIX based machines (Linux, MacOS).
+
+07q. How would you write
          cout << "Hello, ";
          cout << first_name;
          cout << "!\'n";
     as a single line of code?
+07a. cout << "Hello, " << first_name << "!\n";
 
-08. What is an object?
+08q. What is an object?
+08a. An object is a region of memory with specified type (char, string, int, double).
 
-09. WHat is a literal?
+09q. What is a literal?
+09a. Literals are value representations. They're either single characters, strings of characters or numbers.
+     Literals are the name and value of variables and differ in type (e.g. char, string, int, double, etc.).
 
-10. What kinds of literals are there?
+10q. What kinds of literals are there?
+10a. As many as there are types. char-literals, string-literals, int-literals, double-literas, etc.).
 
-11. What is a variable?
+11q. What is a variable?
+11a. Variables are named objects of specific type.
 
-12. What are typical sizes for a char, an int, and a double?
+12q. What are typical sizes for a char, an int, and a double?
 
-13. What measures do we use for the size of small entities in memory, such as ints and strings?
+13q. What measures do we use for the size of small entities in memory, such as ints and strings?
 
-14. What is the difference between = and ==?
+14q. What is the difference between = and ==?
 
-15. What is a definition?
+15q. What is a definition?
 
-16. What is an initialization and how does it differ from an assignment?
+16q. What is an initialization and how does it differ from an assignment?
 
-17. What is string concatenation and how do you make it work in C++?
+17q. What is string concatenation and how do you make it work in C++?
 
-18. Which of the following are legal names in C++? If a name is not legal, why not?
+18q. Which of the following are legal names in C++? If a name is not legal, why not?
     This_little_pig         This_1_is_fine          2_For_1_special
     latest thing            the_$12_method          _this_is_ok
     MiniMineMine            number                  correct?
 
-19. Give five examples of legal names that you shouldn't use because they are likely to cause confusion.
+19q. Give five examples of legal names that you shouldn't use because they are likely to cause confusion.
 
-20. What are some good rules for choosing names?
+20q. What are some good rules for choosing names?
 
-21. What is type safety and why is it important?
+21q. What is type safety and why is it important?
 
-22. Why can conversion from double to int be a bad thing?
+22q. Why can conversion from double to int be a bad thing?
 
-23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+23q. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
