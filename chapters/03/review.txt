@@ -45,23 +45,51 @@
 11a. Variables are named objects of specific type.
 
 12q. What are typical sizes for a char, an int, and a double?
+12a. char: 1 byte (8 bit), int: 4 bytes (32 bit), double: 8 bytes (64 bit)
 
 13q. What measures do we use for the size of small entities in memory, such as ints and strings?
+13a. Bits. They contain binary values (0 or 1) and are fixed for integers and variable in size for strings.
 
 14q. What is the difference between = and ==?
+14a. <mark> = </mark> is the "assignment operator", used to assign values to variables.
+     <mark> == </mark> is the "euqates to" operator, used to compare values for variables.
 
 15q. What is a definition?
+15a. A statement that introduces a new variable to a program, e.g. string friend_name;
 
 16q. What is an initialization and how does it differ from an assignment?
+16a. Initialization is the first assignment of a variable.
+     e.g. intialization: string friend_name = "Klaus"; assignment: friend_name = "Funny Guy";
 
 17q. What is string concatenation and how do you make it work in C++?
+17a. Depends on usecase.
+     Using <mark> cout </mark> like this: cout << "This is " << "how you " << "concatenate strings." << '\n';
+     Using <mark> variables </mark> like this: string first_name = "Klaus"; string last_name = "Lex", string full_name = first_name + " " + last_name;
+     Notice how I used " " to add a single whitespace character inbetween my names? ;)
+     
 
 18q. Which of the following are legal names in C++? If a name is not legal, why not?
-    This_little_pig         This_1_is_fine          2_For_1_special
-    latest thing            the_$12_method          _this_is_ok
-    MiniMineMine            number                  correct?
+     This_little_pig         This_1_is_fine          2_For_1_special
+     latest thing            the_$12_method          _this_is_ok
+     MiniMineMine            number                  correct?
+
+18a. This kinda depends on what is meant by "legal"? Appropriate or forbidden?
+     This_little_pig         This is okay.      But weird notation
+     This_1_is_fine          This is okay.      Also weird.
+     2_For_1_special         This is not okay.  Variables must not start with numbers
+     latest thing            This is not okay.  Variables can't contain spaces.
+     the_$12_method          This is not okay.  Variables must not contain symbols besides underscores (_)
+     _this_is_ok             This is not okay.  Leading underscores are not advised.
+     MiniMineMine            This is okay.      Classic CamelCase notation.
+     number                  This is okay.      Normal variable name
+     correct?                This is not okay.  Variables must not contain symbols besides underscores (_)
 
 19q. Give five examples of legal names that you shouldn't use because they are likely to cause confusion.
+19a. int _variable      Reserved for system variables or autogen code.
+     int VARIABLE       Reserved for macros.
+     int string         Variable type but also common name.
+     
+
 
 20q. What are some good rules for choosing names?
 
