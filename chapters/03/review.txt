@@ -88,13 +88,18 @@
 19a. int _variable      Reserved for system variables or autogen code.
      int VARIABLE       Reserved for macros.
      int string         Variable type but also common name.
-     
-
+     int vbl            What does that even mean?
+     int this_is_a_super_important_new_variable_thats_absolutely_necessary      Way too long and undescriptive.
 
 20q. What are some good rules for choosing names?
+20a. Short, descriptive and easy to read names, like variable_1, FirstName or large_tree.
 
 21q. What is type safety and why is it important?
+21a. Type safety is the conformity of detecting different types and handling mixing those.
+     Type safety is required for robust code, as different object types come with different attributes.
 
 22q. Why can conversion from double to int be a bad thing?
+22a. Because floating point variables get truncated, e.g. 2.7 becomes 2.
 
 23q. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+23a. Narrowing?
