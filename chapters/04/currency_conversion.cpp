@@ -10,10 +10,10 @@ int main(){
 
     cout<< "Please enter an amount of krona followed by a unit to convert (y=yen or p=pounds):\n"; cin >> length >> unit;
 
-    if (unit == 'i')
-        cout << length << "in == " << cm_per_inch*length << "cm\n";
-    else if (unit == 'c')
-        cout << length << "cm == " << length/cm_per_inch << "in\n";
+    if (unit == 'y')
+        cout << length << "in == " << cm_per_inch*length << "yen\n";
+    else if (unit == 'p')
+        cout << length << "cm == " << length/cm_per_inch << "pounds\n";
     else
         cout << "Sorry, I don't know a unit called '" << unit << "'\n";
 }
