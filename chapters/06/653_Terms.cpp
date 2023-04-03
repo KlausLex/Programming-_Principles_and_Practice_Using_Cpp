@@ -15,12 +15,9 @@ double term()
             left /= primary();
             t = get_token();
             break;
-        case '%':
-            left %= primary();
-            t = get_token();
-            break;
         default:
             return left;
         }
     }
 }
+
